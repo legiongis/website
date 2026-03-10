@@ -20,19 +20,34 @@ const projects = (await getCollection('work'))
 
 const clientList = [
 	{
+		image_url: "/assets/clients/FPAN_logo.png",
+		name: "Florida Public Archaeology Network",
+		website: "https://fpan.us/"
+	},
+	{
 		image_url: "/assets/clients/gci.png",
 		name: "Getty Conservation Institute",
 		website: "https://www.getty.edu/conservation/"
 	},
 	{
-		image_url: "/assets/clients/oxweb-logo.gif",
-		name: "University of Oxford",
-		website: "https://www.arch.ox.ac.uk/"
+		image_url: "/assets/clients/preservescapes.png",
+		name: "PRESERVE/scapes",
+		website: "http://preservescapes.com/"
 	},
 	{
-		image_url: "/assets/clients/ncptt-white.jpg",
-		name: "National Center for Preservation Technology and Training",
-		website: "https://www.nps.gov/subjects/ncptt/index.htm"
+		image_url: "/assets/clients/ARGlogo.png",
+		name: "Architectural Resources Group",
+		website: "https://argcreate.com/"
+	},
+	{
+		image_url: "/assets/clients/csp.jpg",
+		name: "Crawford Stewardship Project",
+		website: "https://www.crawfordstewardship.org/"
+	},
+	{
+		image_url: "/assets/clients/WR+logo.webp",
+		name: "Winding Roads Art Tour",
+		website: "https://www.windingroadsart.com/"
 	},
 	{
 		image_url: "/assets/clients/crc.png",
@@ -45,9 +60,34 @@ const clientList = [
 		website: "https://valleystewardshipnetwork.org/"
 	},
 	{
-		image_url: "/assets/clients/preservescapes.png",
-		name: "PRESERVE/scapes",
-		website: "http://home.preservescapes.com/"
+		image_url: "/assets/clients/oxweb-logo.gif",
+		name: "University of Oxford",
+		website: "https://www.arch.ox.ac.uk/"
+	},
+	{
+		image_url: "/assets/clients/vchs.png",
+		name: "Vernon County Historical Society",
+		website: "https://www.vernoncountyhistory.org/"
+	},
+	{
+		image_url: "/assets/clients/crnha_logo.png",
+		name: "Cane River National Heritage Area",
+		website: "https://www.canerivernha.org/"
+	},
+	{
+		image_url: "/assets/clients/TMP-WORDMARK.png",
+		name: "Theban Mapping Project",
+		website: "https://thebanmappingproject.com/"
+	},
+	{
+		image_url: "/assets/clients/ncptt-white.jpg",
+		name: "National Center for Preservation Technology and Training",
+		website: "https://www.nps.gov/subjects/ncptt/index.htm"
+	},
+	{
+		image_url: "/assets/clients/coherit_logo.png",
+		name: "Coherit Associates",
+		website: "http://coherit.com/"
 	},
 ]
 
@@ -121,7 +161,7 @@ const clientList = [
 					<Grid variant="small">
 					{
 						clientList.map((client) => (
-							<a class="client-card" href={client.website} title={client.name}>
+							<a class="client-card" href={client.website} title={client.name} target="_blank">
 									<img src={client.image_url}/>
 								</a>
 						))
