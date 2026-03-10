@@ -20,10 +20,35 @@ const projects = (await getCollection('work'))
 
 const clientList = [
 	{
-		image_url: "/assets/ac_headshot_square-xl.jpg",
+		image_url: "/assets/clients/gci.png",
 		name: "Getty Conservation Institute",
-		website: "https://getty.org"
-	}
+		website: "https://www.getty.edu/conservation/"
+	},
+	{
+		image_url: "/assets/clients/oxweb-logo.gif",
+		name: "University of Oxford",
+		website: "https://www.arch.ox.ac.uk/"
+	},
+	{
+		image_url: "/assets/clients/ncptt-white.jpg",
+		name: "National Center for Preservation Technology and Training",
+		website: "https://www.nps.gov/subjects/ncptt/index.htm"
+	},
+	{
+		image_url: "/assets/clients/crc.png",
+		name: "Crossroads Resource Center",
+		website: "http://www.crcworks.org/"
+	},
+	{
+		image_url: "/assets/clients/vsn-black.png",
+		name: "Valley Stewardship Network",
+		website: "https://valleystewardshipnetwork.org/"
+	},
+	{
+		image_url: "/assets/clients/preservescapes.png",
+		name: "PRESERVE/scapes",
+		website: "http://home.preservescapes.com/"
+	},
 ]
 
 // Full Astro Component Syntax:
@@ -35,7 +60,7 @@ const clientList = [
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title=""
+					title="Maps, data, and old stuff..."
 					tagline="We are a small geospatial consulting firm specializing in open source software and historical map applications."
 					align="start"
 				>
@@ -94,15 +119,14 @@ const clientList = [
 
 				<div class="gallery">
 					<Grid variant="small">
-						{
-							clientList.map((client) => (
-								<li class="mention-card">
-									<a href={client.website} title={client.name}>
-										<img src={client.image_url}/>
-									</a>
-								</li>
-							))
-						}
+					{
+						clientList.map((client) => (
+							<a class="client-card" href={client.website} title={client.name}>
+									<img src={client.image_url}/>
+								</a>
+						))
+					}
+
 					</Grid>
 				</div>
 			</section>
@@ -236,19 +260,32 @@ const clientList = [
 
 	/* ====================================================== */
 
-	.mention-card img {
+	.client-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width:
+	}
+
+	.client-card {
 		display: flex;
 		height: 7rem;
 		justify-content: center;
 		align-items: center;
+		border-radius: 1em;
 		text-align: center;
 		color: var(--gray-300);
-		background: var(--gradient-subtle);
+		background: linear-gradient(150deg, white 19%, white 150%);
 		box-shadow: var(--shadow-sm);
 	}
 
+	.client-card img {
+		max-height: 100%;
+		padding: .5em;
+	}
+
 	@media (min-width: 50em) {
-		.mention-card img {
+		.mention-card {
 			height: 9.5rem;
 		}
 	}
