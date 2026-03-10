@@ -18,6 +18,9 @@ const { title, description } = Astro.props;
 <html lang="en">
 	<head>
 		<MainHead title={title} description={description} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<div class="stack backgrounds">
@@ -100,8 +103,6 @@ const { title, description } = Astro.props;
 					var(--bg-stripe-1-color) 40px,
 					var(--bg-stripe-2-color) 40px,
 					var(--bg-stripe-2-color) 80px );
-				/* background: repeating-linear-gradient( to right, #cdcdcd, #cdcdcd 40px, #c7c7c7 40px, #c7c7c7 80px ); */
-
 			}
 			@media (forced-colors: active) {
 				/* Deactivate custom backgrounds for high contrast users. */
