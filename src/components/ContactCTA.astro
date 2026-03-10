@@ -5,10 +5,35 @@ import Icon from './Icon.astro';
 
 <aside>
 	<h2>Interested in working together?</h2>
-	<CallToAction href="mailto:me@example.com">
+	<!-- <CallToAction href="mailto:me@example.com">
 		Send Me a Message
 		<Icon icon="paper-plane-tilt" size="1.2em" />
-	</CallToAction>
+	</CallToAction> -->
+	<form
+		name="contact"
+		method="POST"
+		netlify-honeypot="bot-field"
+		data-netlify="true"
+		>
+		<p class="hidden">
+			<label>
+			Don’t fill this out if you’re human: <input name="bot-field" type="text" />
+			</label>
+		</p>
+		<p>
+			<label>
+			Email: <input type="text" name="email" />
+			</label>
+		</p>
+		<p>
+			<label>
+			Message: <textarea name="message"></textarea>
+			</label>
+		</p>
+		<p>
+			<button type="submit">Send</button>
+		</p>
+		</form>
 </aside>
 
 <style>
