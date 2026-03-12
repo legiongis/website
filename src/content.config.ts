@@ -15,4 +15,13 @@ export const collections = {
 			img_alt: z.string().optional(),
 		}),
 	}),
+	notes: defineCollection({
+		// Load Markdown files in the src/content/work directory.
+		loader: glob({ base: './src/content/notes', pattern: '**/*.md' }),
+		schema: z.object({
+			title: z.string(),
+			description: z.string(),
+			publishDate: z.coerce.date(),
+		}),
+	}),
 };

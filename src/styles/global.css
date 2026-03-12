@@ -185,6 +185,18 @@ h5 {
 	font-size: var(--text-xl);
 }
 
+code {
+	color: #c90202;
+}
+
+pre {
+	margin: 1em 0;
+	padding: .5em;
+}
+pre code {
+	color: lightgrey;
+}
+
 /* Utilities */
 
 .sr-only {
