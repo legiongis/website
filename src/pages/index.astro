@@ -7,9 +7,8 @@ import ContactCTA from '../components/ContactCTA.astro';
 import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
 import Icon from '../components/Icon.astro';
-import Pill from '../components/Pill.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
-import Skills from '../components/Skills.astro';
+import Services from '../components/Services.astro';
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
 
@@ -108,14 +107,7 @@ const clientList = [
 					title="Maps, data, and old stuff..."
 					tagline="We are a small geospatial consulting firm specializing in
 					 open source software and cultural heritage mapping applications."
-					align="start"
-				>
-					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
-					</div>
-				</Hero>
+					align="start" />
 
 				<img
 					alt="Snippet of New Orleans map"
@@ -125,7 +117,7 @@ const clientList = [
 				/>
 			</header>
 
-			<Skills />
+			<Services />
 		</div>
 
 		<main class="wrapper stack gap-20 lg:gap-48">
