@@ -227,15 +227,6 @@ pre code {
 	display: none;
 }
 
-.staff-item {
-	display: flex;
-	align-items: center;
-	gap: 1em;
-}
-.staff-item > img {
-	height: 100px;
-}
-
 .gap-2 {
 	gap: 0.5rem;
 }

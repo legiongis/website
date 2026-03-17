@@ -17,9 +17,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				<h2 class="section-title">Background</h2>
 				<div class="content">
 					<p>
-						Started in 2016, Legion GIS is a Louisiana-based consulting firm specializing
-						in Geographic Information Systems. We work with clients and partners around the world, 
-						and are strong advocates for free and open source software, geospatial or otherwise.
+						Started in 2016, Legion GIS is a consulting firm specializing
+						in Geographic Information Systems in a variety of contexts. We work with clients and partners around the world, 
+						and advocate for free and open source software, geospatial or otherwise. We are registered as an LLC in 
+						both Wisconsin and Louisiana.
 					</p>
 				</div>
 			</section>
@@ -29,9 +30,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 					<div class="staff-item">
 						<img src="/assets/ac_headshot_square-xl.jpg"></img>
 						<div>
-							<p>Adam (software developer & cartographer) has worked with geographic information systems since 2011. In his 
-								free time, he pores over old maps and goes exploring.</p>
-							<p><em>adam [at] legiongis.com</em></p>
+							<p>Adam (software developer & cartographer) has worked in GIS and mapping since 2011, 
+								when he got hooked through archaeology.
+								He has worked in spatial data management for the <a href="https://www.nps.gov/subjects/ncptt/index.htm">National Park Service</a>,
+								server hosting and Django development through <a href="https://archesproject.org">Arches</a>, and frontend web
+								application creation as the lead research software engineer at the <a href="https://healthyregions.org">Healthy
+								Regions & Policies Lab</a>. In 2022 he earned dual MS Geography  and MLIS degress from LSU, and
+								currently lives in New Orleans.</p>
+							<p><em>adam [at] legiongis.com</em> &bull; <em><a href="https://www.linkedin.com/in/mradamcox/">linkedin &nearr;</a></em></p>
 						</div>
 					</div>
 					<div class="staff-item">
@@ -40,7 +46,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 							<p>Liz (office manager) has spent years in school and office administration, recently with the 
 								<a href="https://www.driftlessfolkschool.org/">Driftless Folk School</a>
 								and <a href="https://www.thoreaucollege.org/">Thoreau College</a> in Wisconsin.</p>
-							<p><em>liz [at] legiongis.com</em></p>
+							<p><em>liz [at] legiongis.com</em> &bull; <em><a href="https://www.linkedin.com/in/liz-franklin-8272905b/">linkedin &nearr;</a></em></p>
 						</div>
 					</div>
 				</div>
@@ -75,9 +81,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				<h2 class="section-title">Contact</h2>
 				<div class="content">
 					<p>To get in touch with us for any administrative needs, write to <em>admin [at] legiongis.com</em>.</p>
-					<p>We are registered for business in both Wisconsin and Louisiana. Below are the official addresses
-						for each state.
-					</p>
+					<p>Addresses:</p>
 					<pre>
 Legion GIS, LLC
 211 Hillyer St.
@@ -102,7 +106,7 @@ New Orleans, LA 70119</pre>
 	}
 
 	img {
-		margin-top: 1.5rem;
+		margin-top: .5rem;
 		border-radius: 1.5rem;
 		box-shadow: var(--shadow-md);
 	}
@@ -112,6 +116,18 @@ New Orleans, LA 70119</pre>
 		flex-direction: column;
 		gap: 0.5rem;
 		color: var(--gray-200);
+	}
+
+
+	.staff-item {
+		display: flex;
+		align-items: start;
+		gap: 1em;
+		margin-bottom: 1.5em;
+	}
+
+	.staff-item > img {
+		height: 100px;
 	}
 
 	.section-title {
