@@ -13,4 +13,4 @@ tags:
 
 In collaboration with the [Crawford Stewardship Project](https://crawfordstewardship.org) we created [Karstology](https://karstology.crawfordstewardship.org), a web mapping application that helps volunteers map sinkholes, while also providing a public interface for karst geology-related data in southwestern Wisconsin.
 
-We have added a more comprehensive summary of the project, and the volunteer efforts that went into creating it, here: [karstology.crawfordstewardship.org/about](karstology.crawfordstewardship.org/about).
+We have added a more comprehensive summary of the project, and the volunteer efforts that went into creating it, here: [karstology.crawfordstewardship.org/about](https://karstology.crawfordstewardship.org/about).
