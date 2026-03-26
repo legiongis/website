@@ -44,15 +44,15 @@ const { Content } = await render(entry);
 				</div>
 			</header>
 			<main class="wrapper">
-				<div class="stack gap-10 content">
+				<div class="gallery">
 					{
 						entry.data.gallery && (
 							<Gallery images={entry.data.gallery} />
 						)
 					}
-					<div class="content">
-						<Content />
-					</div>
+				</div>
+				<div class="content">
+					<Content />
 				</div>
 			</main>
 		</div>
@@ -90,6 +90,10 @@ const { Content } = await render(entry);
 		max-width: 54ch;
 	}
 
+	.gallery {
+		margin-bottom: 3rem;
+	}
+
 	.content {
 		max-width: 65ch;
 		margin-inline: auto;
@@ -108,6 +112,7 @@ const { Content } = await render(entry);
 		margin: 1.5rem 0;
 	}
 
+	.gallery :global(img),
 	.content :global(img) {
 		border-radius: 1.5rem;
 		box-shadow: var(--shadow-sm);
