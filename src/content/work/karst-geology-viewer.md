@@ -1,7 +1,7 @@
 ---
 title: Karst Geology Viewer
 publishDate: 2019-12-01 00:00:00
-img: /assets/projects/karstology-main.png
+img: ../../assets/projects/karstology-main.png
 img_alt: The main page of the karstology application showing a map with sinkholes as green dots.
 description: |
   We developed a web mapping application to facilitate crowdsourced data collection, as well

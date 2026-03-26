@@ -37,12 +37,7 @@ const gallery = (image: ImageFunction) => ({
 export const collections = {
 	work: defineCollection({
 		// Load Markdown files in the src/content/work directory.
-		// loader: glob({ base: "./src/content/work", pattern: "**/*.md" }),
-
-		// TEMP: For demonstration of using `image()` instead of string path to
-		// public/assets
-		loader: glob({ base: "./src/content/work", pattern: "**/test/*.md" }),
-		// END TEMP
+		loader: glob({ base: "./src/content/work", pattern: "**/*.md" }),
 
 		schema: ({ image }) =>
 			z.object({
