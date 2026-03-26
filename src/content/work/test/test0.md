@@ -1,7 +1,7 @@
 ---
-title: Test Work Entry 0
+title: Test Gallery Entry 0
 publishDate: 2026-3-22 00:00:00
-img: ~src-assets/projects/crhim-map-sanborn.png
+img: ../../../assets/projects/crhim-map-sanborn.png
 img_alt: test image 1
 description: |
   An implementation of Arches as an one-stop-shop for cultural resource management on a historic veterans home campus.
@@ -9,15 +9,15 @@ tags:
   - Arches
   - Historical maps
 gallery:
-    - src: ~src-assets/projects/crhim-map-sanborn.png
+    - src: ../../../assets/projects/crhim-map-sanborn.png
       alt: test image 1
       title: Test image 1
       description: Here's a description image 1.
-    - src: ~src-assets/projects/crhim-map-plat-overlay.png
+    - src: ../../../assets/projects/crhim-map-plat-overlay.png
       alt: test image 2
       title: Test image 2
       description: Here's a description image 2.
-    - src: ~src-assets/projects/crhim-map-confed-map-overlay.png
+    - src: ../../../assets/projects/crhim-map-confed-map-overlay.png
       alt: test image 3
       title: Test image 3
       description: Here's a description image 3.

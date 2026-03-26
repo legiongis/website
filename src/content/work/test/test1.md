@@ -1,15 +1,15 @@
 ---
-title: Test Work Entry 1
+title: Test Gallery Entry 1
 publishDate: 2026-3-22 00:00:00
 description: |
   An implementation of Arches as an one-stop-shop for cultural resource management on a historic veterans home campus.
 tags:
   - Arches
   - Historical maps
-img: ~src-assets/projects/vernon-trails-cover-low-res.jpg
+img: ../../../assets/projects/vernon-trails-cover-low-res.jpg
 img_alt: test image 1
 gallery:
-    - src: ~src-assets/projects/vernon-trails-cover-low-res.jpg
+    - src: ../../../assets/projects/vernon-trails-cover-low-res.jpg
       alt: test image 1
       title: Test image 1
       description: Labore Lorem duis ullamco voluptate mollit reprehenderit culpa voluptate pariatur. In adipisicing aliqua ipsum duis aliqua tempor commodo non enim non adipisicing nisi consequat.
