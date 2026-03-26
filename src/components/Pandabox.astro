@@ -728,6 +728,9 @@ const { images, transitionType } = Astro.props;
 		}
 
 		function handleSwipe(event: TouchEvent): void {
+			if (!lightboxDialog?.open) return;
+			if ((event.target as Element).closest('button')) return;
+			event.preventDefault();
 			const touchStartX = event.touches[0].clientX;
 
 			function handleTouchEnd(touchEndEvent: TouchEvent): void {
@@ -775,7 +778,7 @@ const { images, transitionType } = Astro.props;
 		nextButton?.addEventListener("click", showNextImage);
 		closeButton?.addEventListener("click", closeDialog);
 		document.addEventListener("keydown", handleKeydown);
-		document.addEventListener("touchstart", handleSwipe);
+		document.addEventListener("touchstart", handleSwipe, { passive: false });
 
 		// Handle centering on resize with debouncing
 		window.addEventListener("resize", () => {
