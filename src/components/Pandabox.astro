@@ -3,10 +3,8 @@
 // https://github.com/SaintSin/astro-pandabox.
 // It was modified to work with an array of `GalleryImage`s instead of a gallery collection.
 
-import { type ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 import { type GalleryImage } from "../content.config.ts"
-
 
 interface Props {
 	images: GalleryImage[];
@@ -447,7 +445,7 @@ const { images, transitionType } = Astro.props;
 	}
 	.close-button {
 		grid-area: trhs;
-		cursor: zoom-out;
+		cursor: pointer;
 		padding-left: 50%;
 	}
 </style>
