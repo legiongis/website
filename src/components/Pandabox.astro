@@ -383,17 +383,21 @@ const { images, transitionType } = Astro.props;
 
 	/* Slide caption */
 	.lightbox-caption {
+		overflow-y: auto;
+
 		p {
 			margin: auto;
 			color: oklch(95% 0 0);
+			font-size: var(--text-base);
 			font-weight: 200;
 			text-align: center;
 			text-wrap: pretty;
 		}
 		/* Image title */
 		p:first-child {
-			padding-block-start: 1.5rem;
+			padding-block-start: 0rem;
 			padding-block-end: 0.75rem;
+			font-size: var(--text-md);
 			font-weight: 800;
 		}
 	}
