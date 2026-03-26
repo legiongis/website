@@ -166,15 +166,15 @@ const { images, transitionType } = Astro.props;
 	}
 	/* Thumbnails and container, change as required */
 	.thumbnail-container {
-		display: grid;
+		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
-		/*grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));*/
-		grid-template-columns: repeat(auto-fit, minmax(270px, 270px));
 		gap: clamp(1rem, 2vw, 1.5rem);
 		max-width: 90vw;
 		overflow: clip;
 	}
 	.thumbnail-button {
+		width: 270px;
 		cursor: zoom-in;
 		outline: none;
 		border: none;
