@@ -592,6 +592,10 @@ const { images, transitionType } = Astro.props;
 				newActiveImage.classList.add("active");
 				currentIndex = index;
 
+				// Reset caption scroll when going back to an image where the caption has already been scrolled
+				const caption = newActiveImage.querySelector<HTMLElement>(".lightbox-caption");
+				if (caption) caption.scrollTop = 0;
+
 				const image =
 					newActiveImage.querySelector<HTMLImageElement>(
 						".lightbox-image",
