@@ -19,7 +19,7 @@ gallery:
         Deserunt consectetur magna minim proident ex consequat quis magna adipisicing nostrud est consectetur nulla. Cupidatat est aliqua ex veniam irure ea adipisicing non ullamco labore ea. Commodo pariatur sit veniam duis. Proident Lorem tempor magna Lorem adipisicing dolore ullamco amet dolore do ea labore. In non nisi ut laboris ea occaecat esse et excepteur deserunt anim adipisicing incididunt ex. Deserunt mollit excepteur aliquip ad elit dolore ut ex sit velit elit amet. Velit irure anim deserunt et sunt incididunt labore eu et et Lorem in cupidatat. Nulla amet magna Lorem amet esse qui deserunt.
     - src: ../../../assets/projects/crhim-home.png
       alt: test image 1
-      title: Home screen
+      title: An unusually long title that will demonstrate text wrapping for image titles in the image gallery
       description: The public-facing home screen of the Cane River Heritage Inventory & Map.
     - src: ../../../assets/projects/crhim-map-sanborn.png
       alt: test image 2
