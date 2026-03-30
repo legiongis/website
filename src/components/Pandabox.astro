@@ -730,6 +730,7 @@ const { images, transitionType } = Astro.props;
 		function handleSwipe(event: TouchEvent): void {
 			if (!lightboxDialog?.open) return;
 			if ((event.target as Element).closest('button')) return;
+			if ((event.target as Element).closest('.lightbox-caption')) return;
 			event.preventDefault();
 			const touchStartX = event.touches[0].clientX;
 
