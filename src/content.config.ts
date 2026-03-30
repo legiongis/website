@@ -22,22 +22,22 @@ export interface GalleryImage {
  * frontmatter.
  */
 const gallery = (image: ImageFunction) => ({
-	gallery: z.array(
-		z
-			.object({
+	gallery: z
+		.array(
+			z.object({
 				src: image(),
 				alt: z.string(),
 				title: z.string(),
 				description: z.string(),
-			})
-
-	).optional(),
+			}),
+		)
+		.optional(),
 });
 
 export const collections = {
 	work: defineCollection({
 		// Load Markdown files in the src/content/work directory.
-		loader: glob({ base: "./src/content/work", pattern: "**/*.md" }),
+		loader: glob({ base: './src/content/work', pattern: '**/*.md' }),
 
 		schema: ({ image }) =>
 			z.object({
@@ -52,7 +52,7 @@ export const collections = {
 	}),
 	notes: defineCollection({
 		// Load Markdown files in the src/content/notes directory.
-		loader: glob({ base: "./src/content/notes", pattern: "**/*.md" }),
+		loader: glob({ base: './src/content/notes', pattern: '**/*.md' }),
 		schema: z.object({
 			title: z.string(),
 			description: z.string(),
