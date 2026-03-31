@@ -7,6 +7,7 @@ import Icon from '../../components/Icon.astro';
 import Pill from '../../components/Pill.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Gallery from '../../components/Gallery.astro';
+import { Image } from 'astro:assets';
 
 interface Props {
 	entry: CollectionEntry<'work'>;
@@ -52,6 +53,7 @@ const { Content } = await render(entry);
 					}
 				</div>
 				<div class="content">
+					{(entry.data.img && !entry.data.gallery) && <Image src={entry.data.img} alt={entry.data.img_alt || ''} />}
 					<Content />
 				</div>
 			</main>
