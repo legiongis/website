@@ -6,6 +6,8 @@ import Hero from '../../components/Hero.astro';
 import Icon from '../../components/Icon.astro';
 import Pill from '../../components/Pill.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Gallery from '../../components/Gallery.astro';
+import { Image } from 'astro:assets';
 
 interface Props {
 	entry: CollectionEntry<'work'>;
@@ -43,11 +45,16 @@ const { Content } = await render(entry);
 				</div>
 			</header>
 			<main class="wrapper">
-				<div class="stack gap-10 content">
-					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
-					<div class="content">
-						<Content />
-					</div>
+				<div class="gallery">
+					{
+						entry.data.gallery && (
+							<Gallery images={entry.data.gallery} />
+						)
+					}
+				</div>
+				<div class="content">
+					{(entry.data.img && !entry.data.gallery) && <Image src={entry.data.img} alt={entry.data.img_alt || ''} />}
+					<Content />
 				</div>
 			</main>
 		</div>
@@ -85,6 +92,10 @@ const { Content } = await render(entry);
 		max-width: 54ch;
 	}
 
+	.gallery {
+		margin-bottom: 3rem;
+	}
+
 	.content {
 		max-width: 65ch;
 		margin-inline: auto;
@@ -103,6 +114,7 @@ const { Content } = await render(entry);
 		margin: 1.5rem 0;
 	}
 
+	.gallery :global(img),
 	.content :global(img) {
 		border-radius: 1.5rem;
 		box-shadow: var(--shadow-sm);

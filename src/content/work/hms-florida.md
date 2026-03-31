@@ -1,7 +1,7 @@
 ---
 title: Heritage Monitoring Scouts, Florida Public Archaeology Network
 publishDate: 2020-03-02 00:00:00
-img: /assets/projects/fpan-search-page.png
+img: ../../assets/projects/fpan-search-page.png
 img_alt: The search page for the Heritage Monitoring Scouts database
 description: |
   We implemented Arches for the Florida Public Archaeology Network to build a web database

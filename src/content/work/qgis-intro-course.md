@@ -1,7 +1,7 @@
 ---
 title: Introduction to QGIS, Community Class
 publishDate: 2016-8-25 00:00:00
-img: /assets/projects/20160711_023919-2_edited.jpg
+img: ../../assets/projects/20160711_023919-2_edited.jpg
 img_alt: Photo of people at a large table looking at slideshow with hillshade map on it.
 description: |
   We created and facilitated an in-person introductory course on how to use QGIS, an open source GIS desktop software.
